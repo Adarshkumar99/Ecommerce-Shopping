@@ -1,0 +1,58 @@
+.contact_head {
+	background-color: $bgColor;
+	$myBorderRadius: 5px;
+	border-radius: $myBorderRadius;
+	margin-top: -40px;
+	-webkit-box-shadow: $myWebkitBoxShadow;
+	-moz-box-shadow: $myMozBoxShadow;
+	box-shadow: $myBoxshadow;
+}
+
+.input_effect {
+	border: 0;
+	outline: none;
+	width: $myWidth;
+	padding: 7px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.input_border {
+	$myPosition: absolute;
+	position: $myPosition;
+	bottom: 0;
+	$myLeft: 50%;
+	left: $myLeft;
+	$myWidth: 0;
+	width: $myWidth;
+	$myHeight: 2px;
+	height: $myHeight;
+	background-color: $bgColor;
+	transition: $myTransition;
+}
+
+.input_effect:focus~ {
+	.input_border {
+		width: $myWidth;
+		transition: $myTransition;
+		left: $myLeft;
+	}
+}
+
+.login-btn {
+	background-color: $bgColor;
+	color: $myColor;
+	outline: none;
+	border: none;
+	$myBorderRadius: 5px;
+	border-radius: $myBorderRadius;
+	$myHeight: 40px;
+	height: $myHeight;
+	$myWidth: 145px;
+	width: $myWidth;
+}
+
+.login-btn:hover {
+	-webkit-box-shadow: $myWebkitBoxShadow;
+	-moz-box-shadow: $myMozBoxShadow;
+	box-shadow: $myBoxshadow;
+}

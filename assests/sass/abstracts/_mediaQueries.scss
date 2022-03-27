@@ -1,0 +1,29 @@
+@media(max-width: 998px) {
+	.form-container {
+		$myWidth: calc(100vw-35vw);
+		width: $myWidth;
+		$myMaxWidth: 100%;
+		max-width: $myMaxWidth;
+	}
+}
+
+@media(max-width:279px) {
+	.index-formBtn {
+		$myWidth: 40vw;
+		width: $myWidth;
+	}
+	.btn2 {
+		$myWidth: 35vw;
+		width: $myWidth;
+	}
+}
+
+@media(max-width:900px) {
+	.carousel-caption {
+		display: none;
+	}
+	.carousel-text {
+		$myFontSize: 20px;
+		font-size: $myFontSize;
+	}
+}

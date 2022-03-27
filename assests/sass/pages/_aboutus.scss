@@ -1,0 +1,31 @@
+.aboutus-container {
+	$myBackgroundColor: lightcyan;
+	background-color: $myBackgroundColor;
+}
+
+.card {
+	cursor: pointer
+}
+
+.main-text {
+	$myFontSize: 25px;
+	font-size: $myFontSize;
+	font-weight: 550;
+}
+
+.card:hover {
+	$myBoxshadow: 0 20px 40px rgba(0, 0, 0, .2);
+	box-shadow: $myBoxshadow;
+}
+
+.img-about {
+	$myM-Bottom: 35px;
+	margin-bottom: $myM-Bottom;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+	filter: drop-shadow(5px 5px 5px #222)
+}
+
+.aboutus-textsize {
+	$myFontSize: 1rem;
+	font-size: $myFontSize;
+}

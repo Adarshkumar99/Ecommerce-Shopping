@@ -1,0 +1,128 @@
+.form-container {
+	background-color: $myBackgroundColor;
+	$myBorderRadius: 10px;
+	border-radius: $myBorderRadius;
+	-webkit-border-radius: 10px;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048);
+	overflow: $myOverflow;
+	$myWidth: calc(100vw-65vw);
+	width: $myWidth;
+	max-width: $myMaxWidth;
+}
+
+.signup-header {
+	background: $myBackground;
+	$myPadding: 30px 0;
+	padding: $myPadding;
+}
+
+.signup-head {
+	$myColor: #222;
+	color: $myColor;
+	font-family: $myFontFamily;
+	$myFontSize: 24px;
+	font-size: $myFontSize;
+	text-transform: $myTextTransform;
+	text-align: center;
+}
+
+.form-controller {
+	margin-bottom: $myM-Bottom;
+	position: $myPosition;
+	padding-bottom: $myP-Bottom;
+	border: $myBorder;
+	$myPadding: 20px;
+	padding: $myPadding;
+	$myPadding: 20px;
+	padding: $myPadding;
+	border-radius: 0.25rem;
+}
+
+.signup-label {
+	$myDisplay: inline-block;
+	display: $myDisplay;
+	$myM-Bottom: 5px;
+	margin-bottom: $myM-Bottom;
+}
+
+.form-controller {
+	input {
+		width: $myWidth;
+		$myBorder: 2px Solid #f0f0f0;
+		border: $myBorder;
+		$myBorderRadius: 5px;
+		border-radius: $myBorderRadius;
+		display: $myDisplay;
+		font-family: $myFontFamily;
+		$myFontSize: 14px;
+		font-size: $myFontSize;
+		$myPadding: 12px;
+		padding: $myPadding;
+	}
+}
+
+.form-controller {
+	input:focus {
+		outline: $myOutline;
+		border-color: $myBorderColor;
+	}
+}
+
+.success {
+	input {
+		$myBorderColor: #2ecc71;
+		border-color: $myBorderColor;
+	}
+}
+
+.error {
+	input {
+		$myBorderColor: #e74c3c;
+		border-color: $myBorderColor;
+	}
+}
+
+.form-controller {
+	small {
+		$myColor: #e74c3c;
+		color: $myColor;
+		$myPosition: absolute;
+		position: $myPosition;
+		left: $myLeft;
+		visibility: $myVisibility;
+		margin-left: 7px;
+	}
+}
+
+.form-controller.error small {
+	$myVisibility: visible;
+	visibility: $myVisibility;
+}
+
+.signup-btn {
+	background: $myBackground;
+	$myBorderRadius: 6px;
+	border-radius: $myBorderRadius;
+	$myBorder: none;
+	border: $myBorder;
+	$myOutline: none;
+	outline: $myOutline;
+	color: $myColor;
+	display: $myDisplay;
+	font-family: $myFontFamily;
+	$myFontSize: 24px;
+	font-size: $myFontSize;
+	padding: $myPadding;
+	margin-top: 20px;
+	width: $myWidth;
+	font-weight: bold;
+	text-transform: $myTextTransform;
+	transition: all 1s ease;
+}
+
+.form {
+	.signup-btn:hover {
+		$myBackground: linear-gradient(to left, #74ebd5, #a7b5f3);
+		background: $myBackground;
+	}
+}

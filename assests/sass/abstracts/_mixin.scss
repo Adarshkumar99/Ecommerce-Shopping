@@ -1,0 +1,23 @@
+.navbar {
+	$myBackgroundColor: black;
+	background-color: $myBackgroundColor;
+}
+
+.nav-link {
+	color: $myColor
+}
+
+.nav-link:hover {
+	$myColor: #0dcaf0;
+	color: $myColor;
+}
+
+.fa {
+	font-size: $myFontSize;
+	color: $myColor;
+}
+
+.footer-instagram {
+	$myColor: rgb(204, 44, 70);
+	color: $myColor;
+}

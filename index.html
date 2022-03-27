@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LifeStore</title>
+	<!-- Bootstrap icon cdn -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+	<!-- Bootstrap CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Font icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assests/sass/style.css">
+
+</head>
+
+<body>
+	<!-- NavBar -->
+	<nav class="navbar navbar-expand-lg sticky-top">
+
+		<div class="container">
+			<a class="navbar-brand text-white" href="#">LifeStore</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+				  </button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-lg-0 p-3">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html"><i class="bi bi-house-fill"></i> HOME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="signup.html"><i class="bi bi-person-plus"></i> SIGN UP</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="login.html"><i class="bi bi-box-arrow-in-right"></i> LOGIN</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="aboutus.html"><i class="bi bi-file-person"></i> ABOUT US</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="product.html"><i class="bi bi-shop"></i> SHOP</a>
+					</li>
+				</ul>
+				<!-- Navbar Search -->
+				<form class="d-flex">
+					<input class="form-control search-form me-2" type="search" placeholder="Search" aria-label="Search" id="search">
+					<button onclick="Search()" class="btn search-btn btn-outline-info" type="submit"><i class="bi bi-search"></i></button>
+				</form>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Header end -->
+
+	<!-- carousel slider -->
+
+	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active" data-bs-interval="1000">
+				<img src="assests/images/slider1.png" class="d-block w-100" alt="slider1">
+				<div class="carousel-caption d-sm-none d-md-block">
+					<h1 class="fw-bold carousel-text">We sell lifestyle.</h1>
+					<p class="fw-bold">Flat 40% OFF on premium brands </p>
+					<br/>
+					<p><a class="btn btn-md btn-info text-white" href="product.html">Shop Now</a></p>
+				</div>
+			</div>
+			<div class="carousel-item" data-bs-interval="2000">
+				<img src="assests/images/slider2.png" class="d-block w-100" alt="slider2">
+				<div class="carousel-caption d-sm-none d-md-block">
+					<h1 class="fw-bold carousel-text">We sell lifestyle.</h1>
+					<p class="fw-bold">Flat 40% OFF on premium brands </p>
+					<br/>
+					<p><a class="btn btn-md btn-info text-white" href="product.html">Shop Now</a></p>
+				</div>
+			</div>
+			<div class="carousel-item" data-bs-interval="3000">
+				<img src="assests/images/slider3.png" class="d-block w-100" alt="slider3">
+				<div class="carousel-caption d-sm-none d-md-block">
+					<h1 class="fw-bold carousel-text">We sell lifestyle.</h1>
+					<p class="fw-bold">Flat 40% OFF on premium brands </p>
+					<br/>
+					<p><a class="btn btn-md btn-info text-white" href="product.html">Shop Now</a></p>
+				</div>
+			</div>
+			<div class="carousel-item" data-bs-interval="1000">
+				<img src="assests/images/slider4.png" class="d-block w-100" alt="slider4">
+				<div class="carousel-caption d-sm-none d-md-block">
+					<h1 class="fw-bold carousel-text">We sell lifestyle.</h1>
+					<p class="fw-bold">Flat 40% OFF on premium brands </p>
+					<br/>
+					<p><a class="btn btn-md btn-info" href="product.html">Shop Now</a></p>
+				</div>
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+	</div>
+
+	<!-- carousel end -->
+
+	<!--Item categories listing-->
+	<div class="container">
+		<h3 class="product-banner p-3 mt-5 text-white font-monospace text-center" id="products">Products</h3>
+		<div class="row text-center" id="item_list">
+			<div class="col-sm-4">
+				<a href="product.html#camera">
+					<div class="img-thumbnail">
+						<img src="assests/images/camera.jpg" class="main_banner card-img" alt="camera">
+						<div class="caption">
+							<h3 class="font-monospace">Cameras</h3>
+							<p>Choose among the best available in the world.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-sm-4">
+				<a href="product.html#watch">
+					<div class="img-thumbnail">
+						<img src="assests/images/watch.jpg" class="main_banner card-img" alt="watch">
+						<div class="caption">
+							<h3 class="font-monospace">Watches</h3>
+							<p>Original watches from the best brands.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-sm-4">
+				<a href="product.html#shirt">
+					<div class="img-thumbnail">
+						<img src="assests/images/shirt.jpg" class="main_banner card-img" alt="shirt">
+						<div class="caption">
+							<h3 class="font-monospace">Shirts</h3>
+							<p>Our exquisite collection of best shirts.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!--Item categories listing end-->
+	</div>
+	<!--Main banner image end-->
+
+	<!--Item categories listing-->
+	<div class="container">
+		<div class="row text-center" id="item_list">
+			<div class="col-sm-4">
+				<a href="product.html#camera">
+					<div class="img-thumbnail">
+						<img src="assests/images/camera2.jpg" class="main_banner card-img" alt="camera">
+						<div class="caption">
+							<h3 class="font-monospace">Cameras</h3>
+							<p>Choose among the best available in the world.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-sm-4">
+				<a href="product.html#watche">
+					<div class="img-thumbnail">
+						<img src="assests/images/watch2.jpg" class="main_banner card-img" alt="watch">
+						<div class="caption">
+							<h3 class="font-monospace">Watches</h3>
+							<p>Original watches from the best brands.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-sm-4">
+				<a href="product.html#shirt">
+					<div class="img-thumbnail">
+						<img src="assests/images/shirt2.jpg" class="main_banner card-img" alt="shirt">
+						<div class="caption">
+							<h3 class="font-monospace">Shirts</h3>
+							<p>Our exquisite collection of best shirts.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!--Item categories listing end-->
+	</div>
+
+	<!-- 2nd list of item categories -->
+
+	<div class="container">
+		<div class="row text-center" id="item_list">
+			<div class="col-sm-4">
+				<a href="product.html#camera">
+					<div class="img-thumbnail">
+						<img src="assests/images/camera3.jpg" class="main_banner card-img" alt="camera">
+						<div class="caption">
+							<h3 class="font-monospace">Cameras</h3>
+							<p>Choose among the best available in the world.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-sm-4">
+				<a href="product.html#watche">
+					<div class="img-thumbnail">
+						<img src="assests/images/watch3.jpg" class="main_banner card-img" alt="watch">
+						<div class="caption">
+							<h3 class="font-monospace">Watches</h3>
+							<p>Original watches from the best brands.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-sm-4">
+				<a href="product.html#shirt">
+					<div class="img-thumbnail">
+						<img src="assests/images/shirt3.jpg" class="main_banner card-img" alt="shirt">
+						<div class="caption">
+							<h3 class="font-monospace">Shirts</h3>
+							<p>Our exquisite collection of best shirts.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!--Item categories listing end-->
+
+	<!-- testionial start -->
+	<div class="container mt-5">
+		<h3 class="testimonial-banner p-3 mt-5 mb-5 text-white font-monospace text-center" id="rate">Our Happy Customer</h3>
+		<div class="row">
+			<div class="testimonial col-lg-4 img-thumbnail">
+				<span class="testimonial-span">&ldquo;</span>
+				<p class="mt-2 text-center">Best Product always Happy Happy.
+				</p>
+				<div class="rating text-center">
+					<i class="fa fa-star home-star"></i>
+					<i class="fa fa-star home-star"></i>
+					<i class="fa fa-star home-star"></i>
+					<i class="fa fa-star home-star"></i>
+					<i class="fa fa-star home-star"></i>
+				</div>
+				<div class="img-cover text-center">
+					<img src="assests/images/testimonialAvtar.jpg" alt="avtar" class="img-fluid testimonial-img">
+					<h4 class="text-center">Will Smith</h4>
+				</div>
+			</div>
+			<!-- testimonial 2 -->
+			<div class="testimonial col-lg-4 img-thumbnail">
+				<span class="testimonial-span">&ldquo;</span>
+				<p class="mt-2 text-center">Amazing fabric color are beautiful.</p>
+				<div class="rating text-center">
+					<i class="fa fa-star home-star"></i>
+					<i class="fa fa-star home-star"></i>
+					<i class="fa fa-star home-star"></i>
+					<i class="fa fa-star home-star"></i>
+					<i class="fa fa-star home-star"></i>
+				</div>
+				<div class="img-cover text-center">
+					<img src="assests/images/testimonialAvtar.jpg" alt="avtar" class="img-fluid testimonial-img">
+					<h4 class="text-center">Jhon Doe</h4>
+				</div>
+			</div>
+			<!-- testimonial 3 -->
+			<div class="testimonial col-lg-4 img-thumbnail">
+				<span class="testimonial-span">&ldquo;</span>
+				<p class="mt-2 text-center">Discount offers are great deal for me.
+				</p>
+				<div class="rating text-center">
+					<i class="fa fa-star home-star"></i>
+					<i class="fa fa-star home-star"></i>
+					<i class="fa fa-star home-star"></i>
+					<i class="fa fa-star home-star"></i>
+					<i class="fa fa-star home-star"></i>
+				</div>
+				<div class="img-cover text-center">
+					<img src="assests/images/testimonialAvtar.jpg" alt="avtar" class="img-fluid testimonial-img">
+					<h4 class="text-center">Andro Ya</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- testimonial end -->
+
+	<!-- Feedback form -->
+	<section class="contact">
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-lg-6 mx-auto">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="contact_head text-center text-white py-3">
+										<h3 class="font-monospace fw-bold">GET IN TOUCH</h3>
+									</div>
+								</div>
+							</div>
+							<div class="form p-3">
+								<div class="form-row my-5">
+									<div class="col-lg-12">
+										<input type="text" class="input_effect" placeholder="First Name">
+										<span class="input_border"></span>
+									</div>
+								</div>
+								<div class="form-row my-5">
+									<div class="col-lg-12">
+										<input type="text" class="input_effect" placeholder="Last Name">
+										<span class="input_border"></span>
+									</div>
+								</div>
+								<div class="form-row pb-4">
+									<div class="col-lg-12">
+										<input type="text" class="input_effect" placeholder="Email">
+										<span class="input_border"></span>
+
+									</div>
+								</div>
+								<div class="form-row pt-5">
+									<div class="col-lg-12">
+										<input type="text" class="input_effect" placeholder="Your Message">
+										<span class="input_border"></span>
+									</div>
+								</div>
+								<div class="form-row pt-4">
+									<div class="col-lg-6">
+										<p> <input type="checkbox"> I am not a robot</p>
+									</div>
+									<div class="offset-4 col-lg-4 pt-5">
+										<button class="index-formBtn"> SEND MESSAGE </button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- feedback form end -->
+	<!-- Footer -->
+	<footer class="bg-dark text-center text-white">
+		<!-- Grid container -->
+		<div class="container p-4">
+			<!-- Section: Social media -->
+			<section class="mb-4">
+				<!-- Facebook -->
+				<a class="btn footer-facebook  m-1" href="#!" role="button"><i class="fa fa-facebook-f text-primary"></i></a>
+
+				<!-- Twitter -->
+				<a class="btn footer-twitter m-1" href="#!" role="button"><i class="fa fa-twitter text-info"></i></a>
+
+				<!-- Google -->
+				<a class="btn footer-google m-1" href="#!" role="button"><i class="fa fa-google text-danger"></i></a>
+
+				<!-- Instagram -->
+				<a class="btn footer-instagram m-1" href="#!" role="button"><i class="fa fa-instagram footer-instagram"></i></a>
+
+				<!-- Linkedin -->
+				<a class="btn footer-linkedin m-1" href="#!" role="button"><i class="fa fa-linkedin text-info"></i></a>
+			</section>
+			<!-- Section: Social media -->
+
+			<!-- Section: Form -->
+			<section class="">
+				<form action="">
+					<div class="row d-flex justify-content-center">
+						<div class="col-auto">
+							<p class="pt-2">
+								<strong>Sign up for our newsletter</strong>
+							</p>
+						</div>
+						<div class="col-md-5 col-12">
+							<!-- Email input -->
+							<div class="form-outline form-white mb-4">
+								<input type="email" id="form5Example21" class="form-control" placeholder="Email Address" />
+							</div>
+						</div>
+						<div class="col-auto">
+							<!-- Submit button -->
+							<button type="submit" class="btn btn-outline-info text-white mb-4">  Subscribe </button>
+						</div>
+					</div>
+				</form>
+			</section>
+			<!-- Section: Form -->
+
+			<!-- Section: Links -->
+			<section class="">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase">EXTRAS</h5>
+
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="#!" class="text-white">Brands</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Affiliate</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Specials</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Site Map</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase">INFORMATION</h5>
+
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="#!" class="text-white">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Terms & Condition</a>
+							</li>
+							<li>
+								<a href="aboutus.html" class="text-white">About Us</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Site Map</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase">MY ACOUNT</h5>
+
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="#!" class="text-white">Wish List</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Newsletter</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Order History</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Returns</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase">CONTACT US</h5>
+
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="#!" class="text-white">42 Dream House, Dreammy</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Adarsh@gmail.com</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">452-732-876</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Dream City, USA</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- Copyright -->
+		<hr>
+		<div class="text-center bg-dark p-3">
+			© 2020 Copyright:
+			<a class="text-white" href="#">LifeStore</a>
+		</div>
+		<!-- Copyright -->
+	</footer>
+	<!-- Footer -->
+	<!-- Javascript -->
+	<script src="assests/js/search.js"></script>
+	<!-- Bootstrap js cdn -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

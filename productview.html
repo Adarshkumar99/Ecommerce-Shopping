@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LifeStore | ProductView</title>
+	<!-- Bootstrap icon cdn -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+	<!-- Bootstrap CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- css link -->
+	<link rel="stylesheet" href="assests/sass/style.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg bg-dark sticky-top">
+
+		<div class="container">
+			<a class="navbar-brand text-white" href="#">LifeStore</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+			  </button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-lg-0  p-3">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html"><i class="bi bi-house-fill"></i> HOME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="login.html"><i class="bi bi-cart2"></i> LOGIN</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="signup.html"><i class="bi bi-person-plus"></i> SIGN UP</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"><i class="bi bi-box-arrow-in-right"></i> Logout</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Header end -->
+	<main id="main-site">
+		<!--   product  -->
+		<section id="product" class="py-3">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<img src="assests/images/camera2.jpg" alt="product" class="img-fluid">
+						<div class="form-row pt-4 Buy-cart-fontbtn  productview-titleFont">
+							<div class="col">
+								<a href="login.html">
+									<button type="submit" class="btn btn-outline-warning text-dark w-100">Proceed to Buy</button></a>
+							</div>
+							<div class="col">
+								<a href="login.html">
+									<button type="submit" class="btn btn-outline-info text-dark w-100 mt-2">Add to Cart</button></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 py-5">
+						<h5 class="productview-titleFont productview-titleSize">Canon EOS</h5>
+						<small>by Canon</small>
+						<div class="d-flex">
+							<div class="rating productview-rating">
+								<span><i class="fa fa-star text-warning"></i></span>
+								<span><i class="fa fa-star text-warning"></i></span>
+								<span><i class="fa fa-star text-warning"></i></span>
+								<span><i class="fa fa-star text-warning"></i></span>
+								<span><i class="fa fa-star text-warning"></i></span>
+							</div>
+							<a href="#" class="px-2 publicRatingText-font productview-rating">20,534 ratings | 1000+ answered questions</a>
+						</div>
+						<hr class="m-0">
+
+						<!--- product price -->
+						<table class="my-3">
+							<tr class="publicRatingText-font productview-rating">
+								<td>M.R.P:</td>
+								<td><del>Rs 36000.00</del></td>
+							</tr>
+							<tr class="publicRatingText-font productview-rating">
+								<td>Deal Price:</td>
+								<td class="productview-titleSize text-danger">Rs<span> 32000.00</span><small class="text-dark Productviewfont-size">&nbsp;&nbsp;Inclusive of all taxes</small></td>
+							</tr>
+							<tr class="publicRatingText-font productview-rating">
+								<td>You Save:</td>
+								<td><span class="Buy-cart-fontbtn text-danger">Rs 4000.00</span></td>
+							</tr>
+						</table>
+						<!---!product price -->
+
+						<!-- policy -->
+						<div id="policy">
+							<div class="d-flex">
+								<div class="return text-center mr-5">
+									<div class="productview-titleSize my-2 color-second">
+										<span class="fa fa-retweet border p-3 rounded-pill text-info"></span>
+									</div>
+									<a href="#" class="publicRatingText-font Productviewfont-size">10 Days <br> Replacement</a>
+								</div>
+								<div class="return text-center mr-5">
+									<div class="productview-titleSize my-2 color-second">
+										<span class="fa fa-truck  border p-3 rounded-pill text-info"></span>
+									</div>
+									<a href="#" class="publicRatingText-font Productviewfont-size">Daily Tuition <br>Deliverd</a>
+								</div>
+								<div class="return text-center mr-5">
+									<div class="productview-titleSize my-2 color-second">
+										<span class="fa fa-check border p-3 rounded-pill text-info"></span>
+									</div>
+									<a href="#" class="publicRatingText-font Productviewfont-size">1 Year <br>Warranty</a>
+								</div>
+							</div>
+						</div>
+						<!--!policy -->
+						<hr>
+
+						<!-- order-details -->
+						<div id="order-details" class="publicRatingText-font d-flex flex-column text-dark">
+							<small>Delivery by : Mar 29  - Apr 1</small>
+							<small>Sold by <a href="#">Daily Electronics </a>(4.5 out of 5 | 18,198 ratings)</small>
+							<small><i class="fa fa-map-marker text-primary"></i>&nbsp;&nbsp;Deliver to Customer - 424201</small>
+						</div>
+						<!-- !order-details -->
+
+						<div class="row">
+						  <div class="col-6">
+								<!-- color -->
+								<div class="color my-3">
+									<div class="d-flex justify-content-between">
+										<h6 class="productview-titleFont">Color:</h6>
+										<div class="p-2 bg-black rounded-circle"><button class="btn productview-rating"></button></div>
+										<div class="p-2 bg-primary rounded-circle"><button class="btn productview-rating"></button></div>
+										<div class="p-2 bg-info rounded-circle"><button class="btn productview-rating"></button></div>
+									</div>
+								</div>
+								<!-- !color -->
+							</div>
+						</div>
+
+						<!-- size -->
+						<div class="size my-3">
+							<h6 class="productview-titleFont">Size :</h6>
+							<div class="d-flex justify-content-between w-75">
+								<div class="RomBtn-font border p-2">
+									<button class="btn p-0 productview-rating">4GB ROM</button>
+								</div>
+								<div class="RomBtn-font border p-2">
+									<button class="btn p-0 productview-rating">6GB ROM</button>
+								</div>
+								<div class="RomBtn-font border p-2">
+									<button class="btn p-0 productview-rating">8GB ROM</button>
+								</div>
+							</div>
+						</div>
+						<!-- size -->
+					</div>
+					<div class="col-12">
+						<h6 class="font-monospace">Product Description</h6>
+						<hr>
+						<p class="publicRatingText-font productview-rating">Sensor: APS-C CMOS Sensor with 24.1 MP (high resolution for large prints and image cropping). Transmission frequency (central frequency):Frequency: 2 412 to 2 462MHz. Standard diopter :-2.5 - +0.5m-1 (dpt) ISO: 100-6400 sensitivity
+							range (critical for obtaining grain-free pictures, especially in low light) Image Processor: DIGIC 4+ with 9 autofocus points (important for speed and accuracy of autofocus and burst photography) Video Resolution: Full HD video
+							with fully manual control and selectable frame rates (great for precision and high-quality video work) Connectivity: WiFi, NFC and Bluetooth built-in (useful for remotely controlling your camera and transferring pictures wirelessly
+							as you shoot) Lens Mount: EF-S mount compatible with all EF and EF-S lenses (crop-sensor mount versatile and compact, especially when used with EF-S lenses) Country of Origin: Taiwan</p>
+					</div>
+					<!-- table col -->
+					<div class="col-6">
+						<h6 class="font-monospace mt-5">Specification</h6>
+						<!-- On tables -->
+						<table class="table w-100 mt-5">
+							<tbody>
+								<tr>
+									<td class="table-secondary"><small>Brand</small></td>
+									<td class="table-secondary"><small>Canon</small></td>
+								</tr>
+								<tr>
+									<td class="table-secondary"><small> Manufacturer</small></td>
+									<td class="table-secondary"><small>Inc., No.18, Chen Kuo Road, Tan Tzu Dist, Taichung City, Taiwan</small> </td>
+								</tr>
+								<tr>
+									<td class="table-secondary"><small> Model</small></td>
+									<td class="table-secondary"><small> Eos 1500D</small></td>
+								</tr>
+								<tr>
+									<td class="table-secondary"><small> Product Dimensions</small></td>
+									<td class="table-secondary"><small> 22 x 16.5 x 14 cm; 1.24 Kilograms</small></td>
+								</tr>
+								<tr>
+									<td class="table-secondary"><small> Batteries</small></td>
+									<td class="table-secondary"><small> 1 D batteries required</small></td>
+								</tr>
+								<tr>
+									<td class="table-secondary"><small>Item model number</small></td>
+									<td class="table-secondary"><small> Eos 1500D</small></td>
+								</tr>
+								<tr>
+									<td class="table-secondary"><small> Flash</small></td>
+									<td class="table-secondary"><small>EF S18-55 IS II,Strap, Battery Charger, Battery Pack, AC Cable</small></td>
+								</tr>
+								<tr>
+									<td class="table-secondary"><small> Digital Storage Capacity</small></td>
+									<td class="table-secondary"><small> 64GB</small></td>
+								</tr>
+								<tr>
+									<td class="table-secondary"><small> Resolution</small></td>
+									<td class="table-secondary"><small>Full hd (1920x1080)</small></td>
+								</tr>
+								<tr>
+									<td class="table-secondary"><small>Compatible Device</small></td>
+									<td class="table-secondary"><small>Smartphone,Connect Station,wi-fi printers.</small></td>
+								</tr>
+								<tr>
+									<td class="table-secondary"><small>Special Features</small></td>
+									<td class="table-secondary"><small>Built-in monaural microphone, Sound-recording level adjustable, wind filter provided</small></td>
+								</tr>
+								<tr>
+									<td class="table-secondary"><small>Mounting Hardware</small></td>
+									<td class="table-secondary"><small>EF S18-55 IS II,Strap, Battery Charger, Battery Pack, AC Cable</small></td>
+								</tr>
+								<tr>
+									<td class="table-secondary"><small> Number of items</small></td>
+									<td class="table-secondary"><small>6</small></td>
+								</tr>
+								<tr>
+									<td class="table-secondary"><small> Display Technology</small></td>
+									<td class="table-secondary"><small>LCD</small></td>
+								</tr>
+								<tr>
+									<td class="table-secondary"><small> Standing screen display size</small></td>
+									<td class="table-secondary"><small>3 inches</small></td>
+								</tr>
+								<tr>
+									<td class="table-secondary"><small> Image Stablization</small></td>
+									<td class="table-secondary"><small>Optical</small></td>
+								</tr>
+								<tr>
+									<td class="table-secondary"><small>Optical Zoom</small></td>
+									<td class="table-secondary"><small>3 x</small></td>
+								</tr>
+								<tr>
+									<td class="table-secondary"><small> Resolution</small></td>
+									<td class="table-secondary"><small>1080p Full HD</small></td>
+								</tr>
+								<tr>
+									<td class="table-secondary"><small> Max Resolution</small></td>
+									<td class="table-secondary"><small>24.1 MP</small></td>
+								</tr>
+								<tr>
+									<td class="table-secondary"><small> Horizontal Resolution</small></td>
+									<td class="table-secondary"><small>1920 Pixels</small></td>
+								</tr>
+								<tr>
+									<td class="table-secondary"><small>Optical Sensor Resolution</small></td>
+									<td class="table-secondary"><small>24.1 MP</small></td>
+								</tr>
+								<tr>
+									<td class="table-secondary"><small> Vertical Resolution</small></td>
+									<td class="table-secondary"><small>1080 Pixels</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+		</section>
+		<!--   !product  -->
+		<!--  Other related product-->
+		<div class="container ">
+			<h5 class="fw-bold mt-5">Other Realted Products</h5>
+			<div class="row text-center mt-5" id="cameras">
+
+				<div class="col-md-3 col-sm-6 home-feature">
+					<div class="img-thumbnail">
+						<img src="assests/images/camera2.jpg" alt="camera" class="card-img">
+						<div class="caption">
+							<h3>Cannon EOS </h3>
+							<div class="rating text-center">
+								<i class="fa fa-star text-warning"></i>
+								<i class="fa fa-star text-warning"></i>
+								<i class="fa fa-star text-warning"></i>
+								<i class="fa fa-star text-warning"></i>
+								<i class="fa fa-star text-warning"></i>
+							</div>
+							<p>Price: Rs. 36000.00 </p>
+							<p><a href="login.html" class="btn btn-outline-info btn-block">Add to cart</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 home-feature">
+					<div class="img-thumbnail">
+						<img src="assests/images/camera3.jpg" alt="camera" class="card-img">
+						<div class="caption">
+							<h3>Nikon EOS </h3>
+							<div class="rating text-center">
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star text-warning"></i>
+							</div>
+							<p>Price: Rs. 460000.00 </p>
+							<p><a href="login.html" class="btn btn-outline-info btn-block">Add to cart</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 home-feature">
+					<div class="img-thumbnail">
+						<img src="assests/images/camera4.jpg" alt="camera" class="card-img">
+						<div class="caption">
+							<h3>Sony DSLR </h3>
+							<div class="rating text-center">
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star text-warning"></i>
+							</div>
+							<p>Price: Rs. 50000.00 </p>
+							<p><a href="login.html" class="btn btn-outline-info btn-block">Add to cart</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 home-feature">
+					<div class="img-thumbnail">
+						<img src="assests/images/camera6.jpg" alt="camera" class="card-img">
+						<div class="caption">
+							<h3>Olymp DSLR </h3>
+							<div class="rating text-center">
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-half text-warning"></i>
+							</div>
+							<p>Price: Rs. 50000.00 </p>
+							<p><a href="login.html" class="btn btn-outline-info btn-block">Add to cart</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</main>
+	<!-- other realed product end -->
+	<!-- reviw box -->
+	<div class=" container height-vh d-flex  mt-5">
+		<div class="col-12 col-md-10 col-lg-8 col-xl-7">
+			<h5 class="fw-bold mt-5 mb-5">Reviews</h5>
+			<div class="d-flex mt-3">
+				<input type="search" class="form-control input-sm" placeholder="Search reviews" aria-label="Search">
+				<button class="btn btn-info " type="submit">
+				   <i class=" bg-info text-black bi bi-search"></i>
+				 </button>
+				<select class="ms-2" id="cars">
+		  <option value="volvo" id="alls" selected>All Ratings</option>
+		  <option value="saab" id="fives">Five Star</option>
+		  <option value="opel" id="fours">Four Star</option>
+		  <option value="audi" id="threes">Three Star</option>
+		  <option value="audi" id="twos">Two Star</option>
+		 <option value="audi" id="ones">One Star</option>
+	   </select>
+			</div>
+			<div class="row mt-4 border-bottom">
+				<h6>Simran Gill</h6>
+				<span id="fiveStar">
+				   <i class="text-warning bi bi-star-fill"></i>
+				   <i class="text-warning bi bi-star-fill"></i>
+				   <i class="text-warning bi bi-star-fill"></i>
+				   <i class="text-warning bi bi-star-fill"></i>
+				  <i class="text-warning bi bi-star-fill"></i>
+				   <small class="ms-2">3 Months ago</small>
+			   </span>
+				<p>I will update review as I go:The 4k camera with interchangeable lenses, what else you can get?It is overpriced in India, but there is no competition for it in India yet. 16 MP is low but if paired with some nice cheap lense, it does deliver
+					cinematic pictures and videos.I have 3 different lenses.
+				</p>
+				<div class="inline ">
+					<i class="text-warning fa fa-thumbs-up"></i>
+					<i class="text-warning ps-4 fa fa-thumbs-down"></i>
+				</div>
+			</div>
+			<div class="row mt-4 border-bottom">
+				<h6>Andro Der</h6>
+				<span id="fiveStar">
+					 <i class="text-warning bi bi-star-fill"></i>
+					 <i class="text-warning bi bi-star-fill"></i>
+					 <i class="text-warning bi bi-star-fill"></i>
+					<i class="text-warning bi bi-star-fill"></i>
+					 <i class="text-warning bi bi-star-half"></i>
+						<small class="ms-2">4 Months ago</small>
+				   </span>
+				<p>Got the camera from another source at a very attractive price. I am loving this camera. I have no previous of DSLR experience or micro-third cameras, but I am learning it with this camera. The camera is excellent. The kit lens from Lumix
+					is super, it a "jack of all trade" for beginners like me.
+				</p>
+				<div class="inline ">
+					<i class="text-warning fa fa-thumbs-up"></i>
+					<i class="text-warning ps-4 fa fa-thumbs-down"></i>
+				</div>
+			</div>
+			<div class="row mt-4 border-bottom">
+				<h6>Goel Boss</h6>
+				<span id="fiveStar">
+				  <i class="text-warning bi bi-star-fill"></i>
+				  <i class="text-warning bi bi-star-fill"></i>
+				  <i class="text-warning bi bi-star-fill"></i>
+				  <i class="text-warning bi bi-star-fill"></i>
+				  <i class="text-warning bi bi-star"></i>
+				  <small class="ms-2">5 Months ago</small>
+		   </span>
+				<p>It is great camera for beginners as well as professional s..Because it has plenty of options....It will take some time to get acquainted with it...It is the camera for youtubers, and vloggers...I am happy to own a camera like this...still
+					I am testing it...once it is completed, I will express.
+				</p>
+				<div class="inline ">
+					<i class="text-warning fa fa-thumbs-up"></i>
+					<i class="text-warning ps-4 fa fa-thumbs-down"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- review box end -->
+	<!-- Star rating  review-->
+	<div class=" container height-vh d-flex mt-5">
+		<div class="col-12 col-md-10 col-lg-8 col-xl-7 text-center">
+
+			<div class="p-5 card">
+				<div class="row d-flex justify-content-center">
+					<div class="col-md-4 d-flex flex-column">
+						<div class="rating-box">
+							<h1 class="mt-2">4.0</h1>
+							<h6 class="mt-0">OUT OF 5</h6>
+						</div>
+						<div class=" d-inline">
+							<span class="bi bi-star-fill text-warning mx-1"></span>
+							<span class="bi bi-star-fill text-warning mx-1"></span>
+							<span class="bi bi-star-fill text-warning mx-1"></span>
+							<span class="bi bi-star-fill text-warning mx-1"></span>
+							<span class="bi bi-star text-warning mx-1"></span>
+						</div>
+						<div>
+							<span class="bi bi-person">1,050,008 total</span>
+						</div>
+					</div>
+					<div class="d-inline">
+						<div class="col-lg pt-5">
+							<i class="bi bi-star-fill text-warning"></i>5
+						</div>
+						<div class="progress">
+							<div class="progress-bar bg-success w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="col-lg">
+							<i class="bi bi-star-fill text-warning"></i>4
+						</div>
+						<div class="progress">
+							<div class="progress-bar bg-success w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="col-lg">
+							<i class="bi bi-star-fill text-warning"></i>3
+						</div>
+						<div class="progress">
+							<div class="progress-bar bg-info w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="col-lg">
+							<i class="bi bi-star-fill text-warning"></i>2
+						</div>
+						<div class="progress">
+							<div class="progress-bar bg-warning w-25" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="col-lg">
+							<i class="bi bi-star-fill text-warning"></i>1
+						</div>
+						<div class="progress">
+							<div class="progress-bar bg-danger w-25" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- review end -->
+	<!-- Footer -->
+	<footer class="bg-dark text-center text-white mt-5">
+		<!-- Grid container -->
+		<div class="container p-4">
+			<!-- Section: Social media -->
+			<section class="mb-4">
+				<!-- Facebook -->
+				<a class="btn footer-facebook  m-1" href="#!" role="button"><i class="fa fa-facebook-f text-primary"></i></a>
+
+				<!-- Twitter -->
+				<a class="btn footer-twitter m-1" href="#!" role="button"><i class="fa fa-twitter text-info"></i></a>
+
+				<!-- Google -->
+				<a class="btn footer-google m-1" href="#!" role="button"><i class="fa fa-google text-danger"></i></a>
+
+				<!-- Instagram -->
+				<a class="btn footer-instagram m-1" href="#!" role="button"><i class="fa fa-instagram footer-instagram"></i></a>
+
+				<!-- Linkedin -->
+				<a class="btn footer-linkedin m-1" href="#!" role="button"><i class="fa fa-linkedin text-info"></i></a>
+			</section>
+			<!-- Section: Social media -->
+
+			<!-- Section: Form -->
+			<section class="">
+				<form action="">
+					<div class="row d-flex justify-content-center">
+						<div class="col-auto">
+							<p class="pt-2">
+								<strong>Sign up for our newsletter</strong>
+							</p>
+						</div>
+						<div class="col-md-5 col-12">
+							<!-- Email input -->
+							<div class="form-outline form-white mb-4">
+								<input type="email" id="form5Example21" class="form-control" placeholder="Email Address" />
+							</div>
+						</div>
+						<div class="col-auto">
+							<!-- Submit button -->
+							<button type="submit" class="btn btn-outline-info text-white mb-4">  Subscribe </button>
+						</div>
+					</div>
+				</form>
+			</section>
+			<!-- Section: Form -->
+
+			<!-- Section: Links -->
+			<section class="">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase">EXTRAS</h5>
+
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="#!" class="text-white">Brands</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Affiliate</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Specials</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Site Map</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase">INFORMATION</h5>
+
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="#!" class="text-white">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Terms & Condition</a>
+							</li>
+							<li>
+								<a href="aboutus.html" class="text-white">About Us</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Site Map</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase">MY ACOUNT</h5>
+
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="#!" class="text-white">Wish List</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Newsletter</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Order History</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Returns</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase">CONTACT US</h5>
+
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="#!" class="text-white">42 Dream House, Dreammy</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Adarsh@gmail.com</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">452-732-876</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Dream City, USA</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- Copyright -->
+		<hr>
+		<div class="text-center bg-dark p-3">
+			© 2020 Copyright:
+			<a class="text-white" href="#">LifeStore</a>
+		</div>
+		<!-- Copyright -->
+	</footer>
+
+	<!-- Bootstrap CDN Javascript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

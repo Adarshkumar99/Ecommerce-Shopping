@@ -1,0 +1,138 @@
+body {
+	html {
+		width: $myWidth;
+		height: $myHeight;
+		font-family: $myFont;
+	}
+}
+
+.search-form {
+	$myBorder: none;
+	border: $myBorder;
+	border-radius: $myBorderRadius;
+}
+
+.search-btn {
+	border-radius: $myBorderRadius;
+}
+
+.carousel-caption {
+	$myBackground: rgba(0, 0, 0, 0.6);
+	background: $myBackground;
+	$myWidth: 33%;
+	width: $myWidth;
+	margin-left: 18%;
+}
+
+#content {
+	min-height: 600px;
+}
+
+#item_list {
+	padding-top: 50px;
+}
+
+.product-banner {
+	$myBackgroundColor: black;
+	background-color: $myBackgroundColor;
+}
+
+.testimonial-banner {
+	$myBackgroundColor: black;
+	background-color: $myBackgroundColor;
+}
+
+.main_banner:hover {
+	opacity: $myOpacity;
+	-ms-transform: scale(0.9);
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.caption {
+	$myColor: black;
+	color: $myColor;
+}
+
+a {
+	text-decoration: none;
+}
+
+.testimonial {
+	position: $myposition;
+	$myPadding: 5rem;
+	padding: $myPadding;
+	$myBoxshadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+	box-shadow: $myBoxshadow;
+	transition: all 300ms ease-in-out;
+	$myBorderRadius: 0.5rem;
+	border-radius: $myBorderRadius;
+}
+
+.testimonial:hover {
+	$myBoxshadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+	box-shadow: $myBoxshadow;
+	transform: translateY(-1rem);
+}
+
+.testimonial-span {
+	$myposition: absolute;
+	position: $myposition;
+	top: 2%;
+	left: 50%;
+	$myFontSize: 6rem;
+	font-size: $myFontSize;
+	transform: translate(-50%, 0);
+	line-height: 1;
+	$myFontFamily: sans-serif;
+	font-family: $myFontFamily;
+}
+
+.testimonial-img {
+	width: 70px;
+}
+
+.home-star {
+	$myColor: #ffd900ef;
+	color: $myColor;
+}
+
+.contact_head {
+	background-color: $bgColor;
+	$myBorderRadius: 5px;
+	border-radius: $myBorderRadius;
+	margin-top: -40px;
+	-webkit-box-shadow: $myWebkitBoxShadow;
+	-moz-box-shadow: $myMozBoxShadow;
+	box-shadow: $myBoxshadow;
+}
+
+.input_effect {
+	$myBorder: 0;
+	border: $myBorder;
+	outline: none;
+	width: $myWidth;
+	$myPadding: 7px 0;
+	padding: $myPadding;
+	border-bottom: 1px solid #ccc;
+}
+
+.index-formBtn {
+	background-color: $bgColor;
+	color: $myColor;
+	outline: none;
+	$myBorder: none;
+	border: $myBorder;
+	$myBorderRadius: 5px;
+	border-radius: $myBorderRadius;
+	$myHeight: 40px;
+	height: $myHeight;
+	$myWidth: 145px;
+	width: $myWidth;
+}
+
+.index-formBtn:hover {
+	-webkit-box-shadow: $myWebkitBoxShadow;
+	-moz-box-shadow: $myMozBoxShadow;
+	box-shadow: $myBoxshadow;
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lifestore | Sign UP</title>
+	<!-- Bootstrap icon cdn -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+	<!-- Bootstrap CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- css -->
+	<link rel="stylesheet" href="assests/sass/style.css">
+
+</head>
+
+<body>
+	<!-- NavBar -->
+	<nav class="navbar navbar-expand-lg sticky-top">
+		<div class="container">
+			<a class="navbar-brand text-white" href="#">LifeStore</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+			  </button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-lg-0 p-3">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html"><i class="bi bi-house-fill"></i> HOME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="login.html"><i class="bi bi-person-plus"></i> LOGIN</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="aboutus.html"><i class="bi bi-file-person"></i> ABOUT US</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="product.html"><i class="bi bi-shop"></i> SHOP</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Header end -->
+	<!-- signup form -->
+	<div class="container form-container">
+		<div class="signup-header mt-5">
+			<h2 class="signup-head text-white fw-bold">Sign Up</h2>
+		</div>
+		<form class="form mt-2" id="form">
+			<div class="form-controller">
+				<label class="signup-label">UserName</label>
+				<input type="text" name="" id="username" placeholder="Enter Your Fullname" autocomplete="off">
+				<small>Error Msg</small>
+			</div>
+			<div class="form-controller">
+				<label class="signup-label">Email</label>
+				<input type="Email" name="" id="email" placeholder="Enter Your Email" autocomplete="off">
+				<small>Error Msg</small>
+			</div>
+			<div class="form-controller">
+				<label class="signup-label">Phone Number</label>
+				<input type="Number" name="" id="phone" placeholder="Enter Your Phone Number" autocomplete="off">
+				<small>Error Msg</small>
+			</div>
+			<div class="form-controller">
+				<label class="signup-label">Password</label>
+				<input type="Password" name="" id="password" placeholder="Enter Your Password" autocomplete="off">
+				<small>Error Msg</small>
+			</div>
+			<div class="form-controller">
+				<label class="signup-label">Confirm Password</label>
+				<input type="Password" name="" id="cpassword" placeholder="Enter Your Confirm Password" autocomplete="off">
+				<small>Error Msg</small>
+			</div>
+			<input onclick="validate()" type="submit" value="Submit" class="btn signup-btn" name="">
+		</form>
+
+	</div>
+	<!-- Footer -->
+	<footer class="bg-dark text-center text-white mt-5">
+		<!-- Grid container -->
+		<div class="container p-4">
+			<!-- Section: Social media -->
+			<section class="mb-4">
+				<!-- Facebook -->
+				<a class="btn footer-facebook  m-1" href="#!" role="button"><i class="fa fa-facebook-f text-primary"></i></a>
+
+				<!-- Twitter -->
+				<a class="btn footer-twitter m-1" href="#!" role="button"><i class="fa fa-twitter text-info"></i></a>
+
+				<!-- Google -->
+				<a class="btn footer-google m-1" href="#!" role="button"><i class="fa fa-google text-danger"></i></a>
+
+				<!-- Instagram -->
+				<a class="btn footer-instagram m-1" href="#!" role="button"><i class="fa fa-instagram footer-instagram"></i></a>
+
+				<!-- Linkedin -->
+				<a class="btn footer-linkedin m-1" href="#!" role="button"><i class="fa fa-linkedin text-info"></i></a>
+			</section>
+			<!-- Section: Social media -->
+
+			<!-- Section: Form -->
+			<section class="">
+				<form action="">
+					<div class="row d-flex justify-content-center">
+						<div class="col-auto">
+							<p class="pt-2">
+								<strong>Sign up for our newsletter</strong>
+							</p>
+						</div>
+						<div class="col-md-5 col-12">
+							<!-- Email input -->
+							<div class="form-outline form-white mb-4">
+								<input type="email" id="form5Example21" class="form-control" placeholder="Email Address" />
+							</div>
+						</div>
+						<div class="col-auto">
+							<!-- Submit button -->
+							<button type="submit" class="btn btn-outline-info text-white mb-4"> Subscribe</button>
+						</div>
+					</div>
+				</form>
+			</section>
+			<!-- Section: Form -->
+			<!-- Section: Links -->
+			<section class="">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase">EXTRAS</h5>
+
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="#!" class="text-white">Brands</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Affiliate</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Specials</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Site Map</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase">INFORMATION</h5>
+
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="#!" class="text-white">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Terms & Condition</a>
+							</li>
+							<li>
+								<a href="aboutus.html" class="text-white">About Us</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Site Map</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase">MY ACOUNT</h5>
+
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="#!" class="text-white">Wish List</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Newsletter</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Order History</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Returns</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase">CONTACT US</h5>
+
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="#!" class="text-white">42 Dream House, Dreammy</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Adarsh@gmail.com</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">452-732-876</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Dream City, USA</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- Copyright -->
+		<hr>
+		<div class="text-center bg-dark p-3">
+			© 2020 Copyright:
+			<a class="text-white" href="#">LifeStore</a>
+		</div>
+		<!-- Copyright -->
+	</footer>
+	<!-- Footer -->
+
+	<!-- javascript -->
+	<script src="assests/js/signup.js"></script>
+	<!-- Bootstrap js CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
